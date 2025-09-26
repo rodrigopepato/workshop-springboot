@@ -1,0 +1,31 @@
+# Compilados e build
+/target/
+/build/
+/out/
+
+# Configuração de IDEs
+/.idea/
+/.vscode/
+/*.iml
+*.classpath
+*.project
+*.settings/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependências locais (se não usar Maven Central/Gradle)
+*.jar
+*.war
+
+# Arquivos temporários
+*.swp
+*.swo
+*.tmp
+
+# Arquivos do Maven wrapper (se não quiser versionar o binário)
+.mvn/wrapper/maven-wrapper.jar
