@@ -1,8 +1,10 @@
 package com.rodrigopepato.course.config;
 
+import com.rodrigopepato.course.entities.Category;
 import com.rodrigopepato.course.entities.Order;
 import com.rodrigopepato.course.entities.User;
 import com.rodrigopepato.course.entities.enums.OrderStatus;
+import com.rodrigopepato.course.repositories.CategoryRepository;
 import com.rodrigopepato.course.repositories.OrderRepository;
 import com.rodrigopepato.course.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +25,20 @@ public class TestConfig implements CommandLineRunner {
     @Autowired
     private OrderRepository orderRepository;
 
+    @Autowired
+    private CategoryRepository categoryRepository;
+
 
     @Override
     public void run(String... args) {
+
+        Category cat1 = new Category(null, "Eletronics");
+        Category cat2 = new Category(null, "Book");
+        Category cat3 = new Category(null, "Computers");
+
+        categoryRepository.saveAll(Arrays.asList(cat1, cat2, cat3));
+
+
         User u1 = new User(null, "Maria Brown", "maria@gmail.com", "999999999", "123456");
         User u2 = new User(null, "Alex Green", "alex@gmail.com", "123456789", "987654");
 
