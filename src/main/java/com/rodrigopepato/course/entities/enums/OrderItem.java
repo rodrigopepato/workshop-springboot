@@ -1,5 +1,6 @@
 package com.rodrigopepato.course.entities.enums;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.rodrigopepato.course.entities.Order;
 import com.rodrigopepato.course.entities.Product;
 import com.rodrigopepato.course.entities.pk.OrderItemPk;
@@ -15,7 +16,7 @@ import java.util.Objects;
 public class OrderItem implements Serializable {
 
     @EmbeddedId
-    private OrderItemPk id;
+    private OrderItemPk id = new OrderItemPk();
 
     private Integer quantity;
     private Double price;
@@ -30,6 +31,7 @@ public class OrderItem implements Serializable {
         this.price = price;
     }
 
+    @JsonIgnore
     public Order getOrder() {
         return id.getOrder();
     }
