@@ -1,8 +1,6 @@
-package com.rodrigopepato.course.entities.enums;
+package com.rodrigopepato.course.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.rodrigopepato.course.entities.Order;
-import com.rodrigopepato.course.entities.Product;
 import com.rodrigopepato.course.entities.pk.OrderItemPk;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;

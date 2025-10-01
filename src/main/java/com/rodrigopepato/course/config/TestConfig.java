@@ -4,7 +4,7 @@ import com.rodrigopepato.course.entities.Category;
 import com.rodrigopepato.course.entities.Order;
 import com.rodrigopepato.course.entities.Product;
 import com.rodrigopepato.course.entities.User;
-import com.rodrigopepato.course.entities.enums.OrderItem;
+import com.rodrigopepato.course.entities.OrderItem;
 import com.rodrigopepato.course.entities.enums.OrderStatus;
 import com.rodrigopepato.course.repositories.CategoryRepository;
 import com.rodrigopepato.course.repositories.OrderItemRepository;
